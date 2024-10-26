@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Vaquinha - Silicone para Ajudar a Jaiane</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .main-container {
+            display: flex;
+            gap: 20px;
+            flex-direction: column; /* Para facilitar o layout em dispositivos móveis */
+            max-width: 100%;
+        }
+        .container, .sidebar {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 100%; /* Ajuste total para telas menores */
+            max-width: 350px;
+            margin: 0 auto;
+        }
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .ad {
+            background-color: #e0e0e0;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 20px;
+            width: 100%;
+            text-align: center;
+            color: #555;
+        }
+        .ad h3 {
+            margin: 0;
+            font-size: 1em;
+            color: #333;
+        }
+        h1 {
+            color: #333;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        p {
+            color: #555;
+            margin: 10px 0;
+        }
+        .progress-bar {
+            width: 100%;
+            background-color: #e0e0e0;
+            border-radius: 5px;
+            overflow: hidden;
+            margin: 10px 0;
+        }
+        .progress {
+            width: 50%;
+            height: 20px;
+            background-color: #4caf50;
+        }
+        .goal {
+            font-size: 1.1em;
+            margin-top: 5px;
+            color: #333;
+        }
+        button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            margin-top: 15px;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .profile-img {
+            width: 100%;
+            max-width: 250px;
+            height: auto;
+            border-radius: 15px;
+            margin-bottom: 15px;
+            object-fit: cover;
+        }
+        header {
+            text-align: center;
+            padding: 10px;
+            background-color: #4caf50;
+            color: white;
+            width: 100%;
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+        /* Media query para telas menores */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            .main-container {
+                flex-direction: column;
+                gap: 10px;
+            }
+            h1 {
+                font-size: 1.2em;
+            }
+            .goal {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>Plataforma de Vaquinhas Solidárias</header>
+    <div class="main-container">
+        <!-- Anúncios e Campanhas Laterais -->
+        <div class="sidebar">
+            <div class="ad">
+                <img alt="Kit Mistura" src="https://raw.githubusercontent.com/seu-usuario/seu-repositorio/main/1b72649f04db5e08c10a1cfbbe96ea02.jpg" style="width:100%; height:auto;"/>
+            </div>
+        </div>
+
+        <!-- Conteúdo Principal -->
+        <div class="container">
+            <img alt="Foto da Jaiane" class="profile-img" src="https://raw.githubusercontent.com/seu-usuario/seu-repositorio/main/1_JAIANE_(5).jpeg"/>
+            <h1>Silicone para Ajudar a Jaiane</h1>
+            <p>Ajude a Jaiane a realizar o sonho do implante de silicone! Ela precisa do seu apoio para alcançar essa meta.</p>
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+            <p class="goal"><strong>Meta:</strong> R$ 5.000,00</p>
+            <p class="goal"><strong>Arrecadado:</strong> R$ 2.500,00</p>
+            <button onclick="alert('Obrigado por querer doar! Esta vaquinha é fictícia e apenas uma brincadeira.')">Doar Agora</button>
+        </div>
+    </div>
+</body>
+</html>
